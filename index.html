@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Career Opportunity Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0b0e14;
+            color: #ffffff;
+        }
+
+        .bg-stars {
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 50px 160px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 130px 80px, #ffffff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 200px 200px;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glow-button {
+            box-shadow: 0 0 25px rgba(236, 72, 153, 0.4);
+            transition: all 0.3s ease;
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 35px rgba(236, 72, 153, 0.7);
+            transform: translateY(-2px);
+        }
+
+        .job-card {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .job-card:hover {
+            transform: translateY(-5px);
+            border-color: #4ade80;
+        }
+    </style>
+</head>
+<body class="bg-stars min-h-screen relative overflow-x-hidden">
+
+    <header class="w-full border-b border-gray-800 bg-[#0b0e14]/90 backdrop-blur-sm fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">🚀</span>
+                    <span class="text-green-400 font-bold text-xl sm:text-2xl tracking-wide uppercase">USA Career Portal</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8 items-center text-sm font-medium">
+                    <a href="#" class="text-gray-200 hover:text-white transition">Home</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">About</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">Careers</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">Insights</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">Contact</a>
+                    <a href="#" class="text-orange-400 hover:text-orange-300 transition font-bold uppercase">Get Started</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20">
+        
+        <section class="max-w-4xl mx-auto px-4 text-center mt-10 mb-20">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 uppercase tracking-tight">
+                <span class="text-gradient">Explore Top Career Opportunities in the USA</span>
+            </h1>
+            
+            <p class="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 max-w-3xl mx-auto">
+                Finding the right path starts with the right information. Discover <span class="text-white font-bold">flexible</span> and <span class="text-white font-bold">remote-friendly</span> industry insights tailored for professionals nationwide. <span class="text-white font-bold">Start your exploration today!</span>
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <button class="bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold py-4 px-10 rounded-full glow-button text-sm sm:text-base tracking-widest uppercase">
+                    CHECK AVAILABILITY & RESEARCH CAREERS
+                </button>
+                <button class="bg-transparent border-2 border-green-500 text-green-400 font-bold py-4 px-10 rounded-full hover:bg-green-500/10 transition duration-300 text-sm sm:text-base tracking-wide uppercase">
+                    Browse Categories
+                </button>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-500 flex items-center justify-center gap-2">
+                    <span class="text-2xl">✨</span> Career Spotlights
+                </h2>
+                <p class="text-gray-400 mt-2 text-xs italic">*Independent research resource. Not an official employment agency.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. Kelly Services -->
+                <div class="job-card bg-[#161b22] border border-gray-700 rounded-xl p-6 flex flex-col shadow-lg">
+                    <div class="h-48 rounded-lg mb-5 border border-green-500/50 overflow-hidden relative">
+                        <img src="https://i.postimg.cc/qRybV5gM/kelly-sevices.jpg" alt="Kelly Services Insights" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-yellow-500 text-xl font-bold text-center mb-4">Kelly Services Career Insights</h3>
+                    <div class="bg-[#0b0e14] rounded-lg p-5 mb-6 flex-grow border border-gray-800">
+                        <ul class="text-emerald-400 space-y-3 text-sm font-medium">
+                            <li class="flex items-center gap-2">• Diverse staffing options</li>
+                            <li class="flex items-center gap-2">• Weekly pay structures</li>
+                            <li class="flex items-center gap-2">• Growth potential</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.af9m8trk.com/F3411C35/36W127R1/?s1=kelfer1" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 rounded-lg uppercase tracking-widest transition text-center block">
+                        CHECK AVAILABILITY
+                    </a>
+                </div>
+
+                <!-- 2. Food Taster -->
+                <div class="job-card bg-[#161b22] border border-gray-700 rounded-xl p-6 flex flex-col shadow-lg">
+                    <div class="h-48 rounded-lg mb-5 border border-green-500/50 overflow-hidden relative">
+                        <img src="https://i.postimg.cc/W3gWLHt4/Food-Taster-Jobs.jpg" alt="Quality Specialist" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-yellow-500 text-xl font-bold text-center mb-4">Quality Specialist Opportunities</h3>
+                    <div class="bg-[#0b0e14] rounded-lg p-5 mb-6 flex-grow border border-gray-800">
+                        <ul class="text-emerald-400 space-y-3 text-sm font-medium">
+                            <li class="flex items-center gap-2">• Specialized industry roles</li>
+                            <li class="flex items-center gap-2">• Flexible scheduling</li>
+                            <li class="flex items-center gap-2">• Dynamic environments</li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 rounded-lg uppercase tracking-widest transition">
+                        CHECK AVAILABILITY
+                    </button>
+                </div>
+
+                <!-- 3. UPS Info - Updated Link -->
+                <div class="job-card bg-[#161b22] border border-gray-700 rounded-xl p-6 flex flex-col shadow-lg">
+                    <div class="h-48 rounded-lg mb-5 border border-green-500/50 overflow-hidden relative">
+                        <img src="https://i.postimg.cc/cJV9zS1v/ups-job.jpg" alt="UPS Career Path" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-yellow-500 text-xl font-bold text-center mb-4">UPS Logistics Career Paths</h3>
+                    <div class="bg-[#0b0e14] rounded-lg p-5 mb-6 flex-grow border border-gray-800">
+                        <ul class="text-emerald-400 space-y-3 text-sm font-medium">
+                            <li class="flex items-center gap-2">• Comprehensive benefits packages</li>
+                            <li class="flex items-center gap-2">• Established career ladders</li>
+                            <li class="flex items-center gap-2">• Global network opportunities</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.af9m8trk.com/F3411C35/UTD127EB/?s1=upfer1" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 rounded-lg uppercase tracking-widest transition text-center block shadow-md">
+                        CHECK AVAILABILITY
+                    </a>
+                </div>
+
+                <!-- 4. Walmart -->
+                <div class="job-card bg-[#161b22] border border-gray-700 rounded-xl p-6 flex flex-col shadow-lg">
+                    <div class="h-48 rounded-lg mb-5 border border-green-500/50 overflow-hidden relative">
+                        <img src="https://i.postimg.cc/Dy0Bg0Fq/image.png" alt="Walmart Career" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-yellow-500 text-xl font-bold text-center mb-4">Walmart Retail Career Paths</h3>
+                    <div class="bg-[#0b0e14] rounded-lg p-5 mb-6 flex-grow border border-gray-800">
+                        <ul class="text-emerald-400 space-y-3 text-sm font-medium">
+                            <li class="flex items-center gap-2">• Nationwide facility network</li>
+                            <li class="flex items-center gap-2">• Skill development programs</li>
+                            <li class="flex items-center gap-2">• Performance-based potential</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.af9m8trk.com/F3411C35/1LQ128ZW/?s1=walfers1" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 rounded-lg uppercase tracking-widest transition text-center block">
+                        CHECK AVAILABILITY
+                    </a>
+                </div>
+
+                <!-- 5. Amazon -->
+                <div class="job-card bg-[#161b22] border border-gray-700 rounded-xl p-6 flex flex-col shadow-lg">
+                    <div class="h-48 rounded-lg mb-5 border border-green-500/50 overflow-hidden relative">
+                        <img src="https://i.postimg.cc/h4wj3ZTf/image.png" alt="Amazon Insights" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-yellow-500 text-xl font-bold text-center mb-4">Amazon Operations Insights</h3>
+                    <div class="bg-[#0b0e14] rounded-lg p-5 mb-6 flex-grow border border-gray-800">
+                        <ul class="text-emerald-400 space-y-3 text-sm font-medium">
+                            <li class="flex items-center gap-2">• Fast-paced career growth</li>
+                            <li class="flex items-center gap-2">• Health & wellness resources</li>
+                            <li class="flex items-center gap-2">• Remote support options</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.af9m8trk.com/F3411C35/PL6125DB/?s1=amafer1" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 rounded-lg uppercase tracking-widest transition text-center block">
+                        CHECK AVAILABILITY
+                    </a>
+                </div>
+
+                <!-- 6. Airport Jobs -->
+                <div class="job-card bg-[#161b22] border border-gray-700 rounded-xl p-6 flex flex-col shadow-lg">
+                    <div class="h-48 rounded-lg mb-5 border border-green-500/50 overflow-hidden relative">
+                        <img src="https://i.postimg.cc/3JvRMjZ7/image.png" alt="Aviation Opportunities" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-yellow-500 text-xl font-bold text-center mb-4">Aviation Sector Opportunities</h3>
+                    <div class="bg-[#0b0e14] rounded-lg p-5 mb-6 flex-grow border border-gray-800">
+                        <ul class="text-emerald-400 space-y-3 text-sm font-medium">
+                            <li class="flex items-center gap-2">• High-impact industry roles</li>
+                            <li class="flex items-center gap-2">• Global network exposure</li>
+                            <li class="flex items-center gap-2">• Technical & service paths</li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 rounded-lg uppercase tracking-widest transition">
+                        CHECK AVAILABILITY
+                    </button>
+                </div>
+
+                <!-- 7. Pepsi - Updated Link -->
+                <div class="job-card bg-[#161b22] border border-gray-700 rounded-xl p-6 flex flex-col shadow-lg">
+                    <div class="h-48 rounded-lg mb-5 border border-green-500/50 overflow-hidden relative">
+                        <img src="https://i.postimg.cc/2jK760md/image.png" alt="Pepsi Career Path" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-yellow-500 text-xl font-bold text-center mb-4">Pepsi Career Opportunities</h3>
+                    <div class="bg-[#0b0e14] rounded-lg p-5 mb-6 flex-grow border border-gray-800">
+                        <ul class="text-emerald-400 space-y-3 text-sm font-medium">
+                            <li class="flex items-center gap-2">• Global brand recognition</li>
+                            <li class="flex items-center gap-2">• Diverse operational roles</li>
+                            <li class="flex items-center gap-2">• Comprehensive employee perks</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.af9m8trk.com/F3411C35/FJQ12719/?s1=pepfer1j" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 rounded-lg uppercase tracking-widest transition text-center block shadow-md">
+                        CHECK AVAILABILITY
+                    </a>
+                </div>
+
+                <!-- 8. Remote -->
+                <div class="job-card bg-[#161b22] border border-gray-700 rounded-xl p-6 flex flex-col shadow-lg">
+                    <div class="h-48 rounded-lg mb-5 border border-green-500/50 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80" alt="Remote Career" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-yellow-500 text-xl font-bold text-center mb-4">Remote Career Exploration</h3>
+                    <div class="bg-[#0b0e14] rounded-lg p-5 mb-6 flex-grow border border-gray-800">
+                        <ul class="text-emerald-400 space-y-3 text-sm font-medium">
+                            <li class="flex items-center gap-2">• Work-from-anywhere focus</li>
+                            <li class="flex items-center gap-2">• Technology-driven roles</li>
+                            <li class="flex items-center gap-2">• Modern work-life balance</li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 rounded-lg uppercase tracking-widest transition">
+                        CHECK AVAILABILITY
+                    </button>
+                </div>
+
+                <!-- 9. Construction -->
+                <div class="job-card bg-[#161b22] border border-gray-700 rounded-xl p-6 flex flex-col shadow-lg">
+                    <div class="h-48 rounded-lg mb-5 border border-green-500/50 overflow-hidden relative">
+                        <img src="https://i.postimg.cc/PJtFhQgZ/image.png" alt="Skilled Trades" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-yellow-500 text-xl font-bold text-center mb-4">Skilled Trade Industry Insights</h3>
+                    <div class="bg-[#0b0e14] rounded-lg p-5 mb-6 flex-grow border border-gray-800">
+                        <ul class="text-emerald-400 space-y-3 text-sm font-medium">
+                            <li class="flex items-center gap-2">• On-site training opportunities</li>
+                            <li class="flex items-center gap-2">• High-demand industry paths</li>
+                            <li class="flex items-center gap-2">• Safety-centered environments</li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 rounded-lg uppercase tracking-widest transition">
+                        CHECK AVAILABILITY
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-800 bg-[#0b0e14]/95 backdrop-blur-md pt-16 pb-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-6">
+                        <span class="text-2xl">🚀</span>
+                        <span class="text-green-400 font-bold text-xl tracking-wide uppercase">USA Career Portal</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-sm mx-auto md:mx-0">
+                        An independent resource providing career research, industry insights, and professional guidance for individuals across the United States.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-6 uppercase tracking-wider text-xs">Resources</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-green-400 transition">Career Research</a></li>
+                        <li><a href="#" class="hover:text-green-400 transition">Industry Trends</a></li>
+                        <li><a href="#" class="hover:text-green-400 transition">Resume Guidance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-6 uppercase tracking-wider text-xs">Compliance & Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-pink-400 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition">Ad Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-600 text-[10px] sm:text-xs leading-tight mb-4">
+                    Disclaimer: This website is an independent information portal and is not affiliated with, or endorsed by, the companies listed. Trademarks belong to their respective owners. Information provided is for research purposes only and does not constitute a guarantee of employment, scheduled interviews, or specific wage levels.
+                </p>
+                <p class="text-gray-500 text-xs">
+                    &copy; 2026 USA Career Resource Portal. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
